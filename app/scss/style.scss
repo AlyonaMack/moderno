@@ -403,3 +403,164 @@
       padding: 30px 10px;
    }
 }
+
+// start footer
+
+.footer {
+   background-color: $bg;
+   padding: 110px 0 30px;
+}
+.footer__content {
+   padding-bottom: 100px;
+   border-bottom: 2px solid #424d53;
+}
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 80px;
+}
+.footer__col {
+   max-width: 270px;
+   width: 100%;
+   &-title {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 24px;
+      color: #fff;
+      padding-bottom: 30px;
+      padding-bottom: 22px;
+      margin-bottom: 30px;
+      position: relative;
+      &::after {
+         content: "";
+         position: absolute;
+         height: 3px;
+         width: 50px;
+         background-color: $green;
+         bottom: 0;
+         left: 0;
+      }
+   }
+   &-text {
+      color: #b7c3c8;
+      margin-bottom: 30px;
+   }
+}
+.footer__info {
+   margin-top: 20px;
+   padding-left: 30px;
+   font-weight: 500;
+   color: #fff;
+   position: relative;
+   &::before {
+      content: "\f041";
+      position: absolute;
+      font-family: "icomoon";
+      font-size: 18px;
+      left: 0;
+      color: $green;
+   }
+}
+.footer__info-phone {
+   &::before {
+      content: "\f095";
+   }
+}
+.footer__col-menu {
+   max-width: 220px;
+}
+.footer__col-list {
+   a {
+      color: #b7c3c8;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+      &::before {
+         content: "\f105";
+         position: absolute;
+         font-family: "icomoon";
+         font-size: 18px;
+         left: 0;
+         color: $green;
+      }
+   }
+}
+
+.footer__social-link {
+   margin-bottom: 38px;
+   // background-image: url("../img/icons/css_sprites.png");
+   li {
+      display: inline-block;
+   }
+   li + li {
+      margin-left: 6px;
+   }
+   a {
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/icons/css_sprites.png");
+   }
+}
+.footer__facebook {
+}
+.footer__twitter {
+   background-position: -31px -31px;
+}
+.footer__youtube {
+   background-position: -61px -1px;
+}
+.footer__pinterest {
+   background-position: -1px -31px;
+}
+.footer__linkedin {
+   background-position: -31px -1px;
+}
+
+.footer__form-title {
+   color: #fff;
+   font-size: 20px;
+   margin-bottom: 15px;
+}
+.footer__form {
+   position: relative;
+   input {
+      border: none;
+      background-color: #2f3c43;
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      color: #fff;
+      height: 40px;
+      padding: 0 50px 0 13px;
+      &::placeholder {
+         color: #697378;
+      }
+   }
+   button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 40px;
+      background-color: $green;
+      width: 45px;
+      border: none;
+      cursor: pointer;
+      &::before {
+         content: "\f124";
+         font-family: "icomoon";
+         color: #fff;
+         font-size: 20px;
+         position: absolute;
+         top: 10px;
+         right: 15px;
+      }
+   }
+}
+
+.footer__copy-text {
+   color: #919699;
+   text-align: center;
+   padding-top: 25px;
+   margin: 0;
+}
